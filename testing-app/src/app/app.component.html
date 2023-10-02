@@ -1,0 +1,10 @@
+<h1>{{ data.title }}</h1>
+<div class="content">
+  <span>{{ data.message }}</span>
+</div>
+
+<app-testing (eventEmisor)="vieneDelHijo($event)"></app-testing>
+
+<button (click)="toggleOther()">Toggle Other component</button>
+
+<app-otro *ngIf="showOther"></app-otro>
